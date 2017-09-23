@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
     device/lge/bullhead/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
 
 # for launcher layout
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     BullheadLayout
 
 # Prebuilt input device calibration files
