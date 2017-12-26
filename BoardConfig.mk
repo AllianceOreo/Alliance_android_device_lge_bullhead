@@ -26,8 +26,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53.a57
 
-ENABLE_CPUSETS := true
-
 TARGET_NO_BOOTLOADER := true
 
 # Inline kernel building
@@ -170,6 +168,9 @@ TARGET_FS_CONFIG_GEN += device/lge/bullhead/config.fs
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/bullhead-setup.sh
+
+DEVICE_MANIFEST_FILE := device/lge/bullhead/manifest.xml
+DEVICE_MATRIX_FILE := device/lge/bullhead/compatibility_matrix.xml
 
 ifeq ($(TARGET_PRODUCT),aosp_bullhead_svelte)
 BOARD_KERNEL_CMDLINE += mem=1024M maxcpus=2
